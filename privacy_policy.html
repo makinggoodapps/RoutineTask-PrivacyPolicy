@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RoutineTask: Repeat Alarm</title>
+    <meta name="description" content="Privacy Policy for RoutineTask: Repeat Alarm, detailing our practices regarding data safety, ads, and target audience.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem;
+            padding: 3rem;
+            background-color: var(--surface-color);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 40px var(--accent-glow);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+        }
+
+        h1, h2, h3 {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        p, ul, li {
+            color: var(--text-secondary);
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .update-date {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(59, 130, 246, 0.2);
+            border-color: var(--accent-color);
+        }
+
+        .highlight {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="update-date">Last updated: <span id="current-date"></span></div>
+
+        <p>Welcome to the Privacy Policy for <strong>RoutineTask: Repeat Alarm</strong>. This document explains how we handle your data, our advertising policies, and our target audience compliance to ensure transparency and trust in accordance with Google Play Store policies.</p>
+
+        <div class="card">
+            <h2>1. Data Safety & Collection</h2>
+            <p>We prioritize your privacy and believe in data minimization. Our application operates completely locally on your device.</p>
+            <ul>
+                <li><span class="highlight">Personal Information:</span> We <strong>do not collect, store, or transmit</strong> any personally identifiable information (PII) such as names, emails, contacts, or location data.</li>
+                <li><span class="highlight">App Data:</span> All alarms, schedules, and preferences you set are stored locally securely in your device's internal database. This data never leaves your device.</li>
+                <li><span class="highlight">Device Permissions:</span> We strictly only request permissions necessary for the app's core alarm functionality:
+                    <ul>
+                        <li><strong>Post Notifications:</strong> Required to visually and audibly notify you when an alarm goes off.</li>
+                        <li><strong>Schedule Exact Alarms:</strong> Required to ensure alarms ring precisely at the time you configured, even in Doze mode.</li>
+                        <li><strong>Receive Boot Completed:</strong> Required to reschedule your active alarms seamlessly after you restart your device.</li>
+                        <li><strong>Read External Storage / Media Audio:</strong> Required if you choose to select a custom ringtone or audio file from your device for your alarms. This permission strictly only accesses audio files when you initiate a ringtone change.</li>
+                        <li><strong>Wake Lock:</strong> Required to wake up your device's screen and keep the processor running long enough to ring your scheduled alarms.</li>
+                        <li><strong>Vibrate:</strong> Required to utilize the device’s vibration motor alongside the audio alarm.</li>
+                    </ul>
+                </li>
+                <li><span class="highlight">Data Sharing:</span> Because no data leaves your device, we absolutely <strong>do not share</strong> any of your data with third parties.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>2. Advertising Policy (Ads)</h2>
+            <p>Our app provides a clean, uninterrupted experience.</p>
+            <ul>
+                <li><span class="highlight">Ad-Free Experience:</span> This application <strong>does not</strong> contain any third-party advertisements.</li>
+                <li><span class="highlight">No Tracking:</span> We do not integrate with ad networks, marketing tracking SDKs, or analytics services that monitor your behavior across other apps or websites.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. Target Audience & Children's Privacy</h2>
+            <p>We are committed to protecting the privacy of all users, especially children.</p>
+            <ul>
+                <li><span class="highlight">Target Audience:</span> Our application is a general-utility tool designed for a broad audience, primarily targeting users aged <strong>13 and older</strong>.</li>
+                <li><span class="highlight">Children Under 13:</span> While the app is perfectly safe for anyone to use (as it lacks data collection and ads), it is not specifically targeted at children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has inadvertently provided us with personal information, please contact us.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>4. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time to reflect changes in our app's features or regulatory requirements from app distribution platforms. Any updates will be posted on this page with a revised "Last updated" date.</p>
+        </div>
+
+        <div class="card">
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions, concerns, or require clarifications regarding this Privacy Policy or your data safety, please don't hesitate to reach out:</p>
+            <p><a href="mailto:support.goodapps@gmail.com">support.goodapps@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Automatically inject current date to keep the policy looking up-to-date
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', dateOptions);
+    </script>
+</body>
+</html>
